@@ -8,12 +8,12 @@ Each node also listen on its receiving port, to receive it NeighborCost informat
 For each node, if its routing table changes after update, it print out the new table.
 A directed graph is implemented.
 
-2. Detail on development environment
+2.Detail on development environment
 Language: JAVA SE-1.6
 OS: MAC OS 10.10.5
 Editor: Sublime Text 2
 
-3. Packet format
+3.Packet format
 The basic data for each UDP packet is a string contains a group of (source ip, source port, destination ip, destination port, cost) tuples.
 Then convert the string to a byte array. Then put it into a UDP datagram with destination ip and destination port.
 Then we send the UDP packet through the UDP sending socket.
