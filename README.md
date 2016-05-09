@@ -6,7 +6,6 @@ While running, each node send its distance vector to all its neighbors every 5 s
 For each node, their neighbors’ information are stored in an arraylist of NeighborInfo Object, the NeighborInfo object consists of the neighbor’s ip address, port number, cost from local host to the neighbor.
 Each node also listen on its receiving port, to receive it NeighborCost information. After receiving the information, each node update their RoutingTable using distance vector.
 For each node, if its routing table changes after update, it print out the new table.
-
 A directed graph is implemented.
 
 2. Detail on development environment
